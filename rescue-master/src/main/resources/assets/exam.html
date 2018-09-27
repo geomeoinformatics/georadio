@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>Exam</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>
+<header>
+    <nav class="light-blue lighten-1" role="navigation">
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="javascript:;" class="brand-logo">Examination portal</a>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="" id="exam-container">
+        <div class="row">
+            <div class="col s12 m12 l3">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-title">
+                            <span id="username"></span>
+                        </div>
+                        <div class="row">
+                            <div class="col s12 m6 l12">
+                                <div class="center-block" style="width:320px; height:240px">
+                                    <video id="video" style="position: absolute;" width="240" height="240" preload
+                                           autoplay loop muted></video>
+                                    <canvas id="canvas" style="position: absolute" width="240" height="240"></canvas>
+                                </div>
+                            </div>
+                            <div class="col s12 m6 l12">
+                                <pre></pre>
+                                <p>Time left:
+                                    <span id="test-remaining-time" class="schedule"></span>
+                                </p>
+                                <p>Time face not detected:
+                                    <span id="test-face-not-detected-duration" class="schedule"></span>
+                                </p>
+                                <p id="isDetected"></p>
+                                <p id="recognized"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m12 l9 " id="exam-div">
+                <div class="row">
+                    <div class="col s12">
+                        <div class="exam-container card">
+                            <div class="card-content">
+                                <div class="row">
+                                    <div class="col s12 question-div ">
+                                        <div>Question:
+                                            <span id="question-number"></span>
+                                        </div>
+                                        <div id="question" class="question">
+                                        </div>
+                                        <div class="row"></div>
+                                        <form action="#">
+                                            <p>
+                                            <div class="row">
+                                                <div class="col s12">
+                                                    <label>
+                                                        <input name="options" class="options black-text" type="radio"
+                                                               value="a"/>
+                                                        <span id="option1">Option</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col s12">
+                                                    <label>
+                                                        <input name="options" class="options" type="radio" value="b"/>
+                                                        <span id="option2">Option</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col s12">
+                                                    <label>
+                                                        <input name="options" class="options" type="radio" value="c"/>
+                                                        <span id="option3">Option</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col s12">
+                                                    <label>
+                                                        <input name="options" class="options" type="radio" value="c"/>
+                                                        <span id="option4">Option</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            </p>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-action" style="padding-top: 30px">
+                                <div class="btn buttons" id="previous-question-btn" onclick="previousQuestion()">
+                                    Previous
+                                </div>
+                                <div class="btn buttons" id="clear-response-btn" onclick="clearResponse()">Clear
+                                    response
+                                </div>
+                                <div class="btn buttons" id="submit-next-question-btn" onclick="submitAndNext()">Submit
+                                    and next
+                                </div>
+                                <p>
+                                <div class="btn buttons right-aligned" id="submit-all-btn"
+                                     onclick="submitResponseFinal()">Submit answers
+                                </div>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overlay">
+                        <div class="row">
+                            <div class="col s12">
+                                <div>
+                                    <p>
+                                    <div class="btn btn-large center-align" id="exam-authorize">Authorize</div>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</main>
+
+<!--  Scripts-->
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
+<script src="js/exam.js"></script>
+<script src="js/tracking/tracking.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/tracking/data/face-min.js"></script>
+<!-- <script src="js/tracking/data/dat.gui.js"></script> -->
+</body>
+
+</html>

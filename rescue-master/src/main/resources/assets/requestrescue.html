@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>GeoRadio</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+<nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"></a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="#"></a></li>
+        </ul>
+
+        <ul id="nav-mobile" class="sidenav">
+            <li><a href="#"></a></li>
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+</nav>
+
+<div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+        <br><br>
+        <h1 class="header center orange-text">GeoRadio</h1>
+        <div class="row center">
+            <h5 class="header col s12 light"></h5>
+        </div>
+        <div class="row center" id="register-button">
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col s12 m10 l6 offset-m1 offset-l3" id="login">
+        <div class="">
+            <form class="col s12" id="rescueform" autocomplete="off" href="javascript;">
+                <div class="form-container card hoverable">
+                    <div class="card-content">
+                        <!--<div class="row">-->
+                        <!--<div class="input-field col s12">-->
+                        <!--<input id="id-name" name="name" type="text" value="username" required class="validate">-->
+                        <!--<label for="id-name">Name</label>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="row">-->
+                        <!--<div class="input-field col s12">-->
+                        <!--<input id="id-phone" name="phone" type="text" value="phone" required class="validate">-->
+                        <!--<label for="id-phone">Phone</label>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="id-request" name="request" type="text" value="" class="validate">
+                                <label for="id-request">Request (What help do you need?)</label>
+                            </div>
+                        </div>
+                        <!--<div class="row">-->
+                        <!--<div class="input-field col s12">-->
+                        <!--<input id="id-location-la" name="latitude" type="text" value="0" class="validate">-->
+                        <!--<label for="id-location-la">Latitude</label>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="row">-->
+                        <!--<div class="input-field col s12">-->
+                        <!--<input id="id-location-lo" name="longitude" type="text" value="0" class="validate">-->
+                        <!--<label for="id-location-lo">Longitude</label>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <div id="login-form-error" class="message-error"></div>
+                        <center>
+                            <button class="btn waves-effect waves-light teal" onclick="rescue()">Request rescue
+                            </button>
+                        </center>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<footer class="page-footer orange">
+</footer>
+<!--  Scripts-->
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
+<script src="js/homepage.js"></script>
+</body>
+</html>

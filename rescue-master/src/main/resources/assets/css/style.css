@@ -1,0 +1,69 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+    padding: 0 15px;
+}
+
+.icon-block .material-icons {
+    font-size: inherit;
+}
+
+#separator-text {
+    padding-top: 19px;
+    font-family: Arial, serif;
+    font-size: 22px;
+}
+
+.overlay {
+    display: none
+}
+
+.message-error {
+    color: orange;
+}
+
+.hidden {
+    display: block !important;
+}
+
+.with-border {
+    border: 1px solid #2ab7a9;
+}
+
+.exam-container {
+    background: lightcyan;
+}
+
+.question-div {
+    min-height: 400px;
+    background: lightcyan;
+}
+
+.buttons {
+    margin: 2px 2px 2px 2px !important;
+}
+
+/*
+body{
+    direction: rtl;
+}
+
+!*CheckBox R2L*!
+[type="checkbox"] + span:not(.lever) {
+    padding-right: 27px;
+}
+[type="checkbox"].filled-in:not(:checked) + span:not(.lever):before,
+[type="checkbox"].filled-in:checked + span:not(.lever):before {
+    right: 10px;
+}
+
+[type="checkbox"].filled-in:not(:checked) + span:not(.lever):after,
+[type="checkbox"].filled-in:checked + span:not(.lever):after {
+    right: 0;
+}*/
